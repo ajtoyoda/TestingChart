@@ -26,15 +26,15 @@ public class RangeTestConstrain2 extends TestCase {
 
 	@Test public void testCoinstrain1(){
 		assertEquals("The constrained value of -1 on 0 and 0 should be 0",
-				exampleRange.constrain(-1), 0, 0.000001d);
+				0, exampleRange.constrain(-1), 0.000001d);
 	}	
 	@Test public void testCoinstrain2(){
 		assertEquals("The constrained value of 1 on 0 and 0 should be 0",
-				exampleRange.constrain(1), 0, 0.000001d);
+				0, exampleRange.constrain(1), 0.000001d);
 	}
 	@Test public void testCoinstrain3(){
 		assertEquals("The constrained value of 0 on 0 and 0 should be 0",
-				exampleRange.constrain(0), 0, 0.000001d);
+				0, exampleRange.constrain(0), 0.000001d);
 	}
 	private Range exampleRange;
 }
