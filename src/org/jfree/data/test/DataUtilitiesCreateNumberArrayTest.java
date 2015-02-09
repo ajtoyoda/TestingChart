@@ -89,19 +89,13 @@ public class DataUtilitiesCreateNumberArrayTest extends TestCase {
 		createArray();
 		Number[] actual = DataUtilities.createNumberArray(m_array);
 		
-		if (m_array.length != actual.length)
-			fail("Array contents should be identical.");
-		
-		boolean isEqual = true;
-		for (int i = 0; i < m_array.length; ++i)
-		{
-			if (actual[i] == null || actual[i].doubleValue() != m_array[i])
-			{
-				isEqual = false;
-				break;
-			}
-		}
-		
-		assertTrue("Array contents should be identical.", isEqual);
+		assertEquals("Array contents must be equal.", m_array[0],
+				actual[0].doubleValue(), 0.0000001);
+		assertEquals("Array contents must be equal.", m_array[1],
+				actual[1].doubleValue(), 0.0000001);
+		assertEquals("Array contents must be equal.", m_array[2],
+				actual[2].doubleValue(), 0.0000001);
+		assertEquals("Array contents must be equal.", m_array[3],
+				actual[3].doubleValue(), 0.0000001);
 	}
 }
