@@ -21,7 +21,7 @@ public class DataUtilitiesCreateNumberArray2DTest extends TestCase {
 	//
 	private void create1DArray()
 	{
-		double[] holder = { 1, 1.11, -1.52, 0 };
+		double[] holder = { 1.0 };
 		m_array = new double[][] { holder };
 	}
 	
@@ -66,8 +66,7 @@ public class DataUtilitiesCreateNumberArray2DTest extends TestCase {
 		create1DArray();
 		Number[][] actual = DataUtilities.createNumberArray2D(m_array);
 		
-		assertEquals("Data of arrays should be equal.",
-				m_array[0][0], actual[0][0].doubleValue(), 0.0000001);
+		assertEquals("Data of arrays should be equal.", m_array[0][0], actual[0][0].doubleValue(), 0.0000001);
 	}
 	
 	// Verifies createNumberArray2D() duplicates the length of a multi-value
