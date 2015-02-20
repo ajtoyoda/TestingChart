@@ -12,7 +12,7 @@ import org.junit.Test;
  * @author Taylor
  *
  */
-public class RangeGetLowerBound {
+public class RangeGetLowerBoundTest {
 
 	@Before
 	public void setUp() {
@@ -44,7 +44,7 @@ public class RangeGetLowerBound {
 	@Test 
 	public void testGetLowerBoundPositiveLowerBound(){
 		range = new Range(2,5);
-		assertEquals(0,range.getLowerBound(), 0.00001d);
+		assertEquals(2,range.getLowerBound(), 0.00001d);
 	}
 	private Range range;
 }

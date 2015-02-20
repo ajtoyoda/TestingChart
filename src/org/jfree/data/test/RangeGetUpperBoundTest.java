@@ -12,7 +12,7 @@ import org.junit.Test;
  * @author Taylor
  *
  */
-public class RangeGetUpperBound {
+public class RangeGetUpperBoundTest {
 	@Before
 	public void setUp() {
 		//No setup is necessary as new range is needed for each test

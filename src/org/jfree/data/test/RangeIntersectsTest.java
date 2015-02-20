@@ -11,7 +11,7 @@ import org.junit.*;
  * @author jamie
  *
  */
-public class RangeTestIntersects extends TestCase {
+public class RangeIntersectsTest extends TestCase {
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}

@@ -1,5 +1,6 @@
 block_filters=SourceDirective
 eclipse.preferences.version=1
+exclude_filter=src/org/jfree/chart/**
 flush_interval=1000
 flush_policy=0
 include_filter=**/*.java

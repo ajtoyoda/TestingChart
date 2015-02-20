@@ -9,7 +9,7 @@ import org.junit.*;
  * @author jamie
  *
  */
-public class RangeTestConstrain extends TestCase {
+public class RangeConstrainTest extends TestCase {
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
