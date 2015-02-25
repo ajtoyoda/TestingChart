@@ -35,7 +35,7 @@ public class DataUtilitiesGetCumulativePercentages extends TestCase {
 	// specified value.  The key associated with the value is the number 0.
 	//	 value: The value to use to create the key-value pair.
 	//
-	private void createSingleValueSet(double value)
+	private void createSingleValueSet(final double value)
 	{
 		m_mockery.checking(new Expectations()
 		{
