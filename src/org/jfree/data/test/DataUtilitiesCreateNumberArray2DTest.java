@@ -37,7 +37,7 @@ public class DataUtilitiesCreateNumberArray2DTest extends TestCase {
 	
 	// Verifies createNumberArray2D throws an exception for an invalid array.
 	//
-	@Test (expected = InvalidParameterException.class)
+	@Test (expected = IllegalArgumentException.class)
 	public void testThrowsInvalidParameterExceptionForNullArray()
 	{
 		createNullArray();
