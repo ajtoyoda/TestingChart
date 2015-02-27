@@ -313,6 +313,7 @@ public class DefaultKeyedValues implements KeyedValues,
             Number v1 = getValue(i);
             Number v2 = that.getValue(i);
             if (v1 == null) {
+            	//so this is covered by my laptop but not my desktop. I don't even know. Everything is haunted
                 if (v2 != null) {
                     return false;
                 }
