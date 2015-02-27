@@ -11,7 +11,7 @@ import java.security.InvalidParameterException;
 // Performs black box testing on the getCumulativePercentages() method of
 // the DataUtilities class.
 //
-public class DataUtilitiesGetCumulativePercentages extends TestCase {
+public class DataUtilitiesGetCumulativePercentagesTest extends TestCase {
 	private Mockery     m_mockery; // Mocking object.
 	private KeyedValues m_values;  // Keys and values.
 	
