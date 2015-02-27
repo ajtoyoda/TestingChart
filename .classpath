@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="var" path="CLOVER_RUNTIME"/>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="var" path="CLOVER_RUNTIME"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/bsh-core-2.0b4.jar"/>
 	<classpathentry kind="lib" path="lib/cglib-2.1_3-src.jar"/>
@@ -20,6 +20,5 @@
 	<classpathentry kind="lib" path="lib/jMock/jmock-junit4-2.5.1.jar"/>
 	<classpathentry kind="lib" path="lib/jMock/jmock-legacy-2.5.1.jar"/>
 	<classpathentry kind="lib" path="lib/jMock/jmock-script-2.5.1.jar"/>
-	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
