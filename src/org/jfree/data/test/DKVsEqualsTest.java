@@ -71,11 +71,11 @@ public class DKVsEqualsTest {
 	@Test
 	public void notEqualWithOneNullValue(){
 		Integer key1 = 0;
-		Integer key2 = 1;
 		Double value1 = null;
 		Double value2 = 1.11;
 		DKVs1.addValue(key1, value1);
-		DKVs2.addValue(key2, value2);
+		DKVs2.addValue(key1, value2);
+		
 		assertFalse(DKVs1.equals(DKVs2));
 	}
 	

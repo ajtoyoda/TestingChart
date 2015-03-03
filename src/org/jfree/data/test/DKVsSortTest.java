@@ -24,11 +24,13 @@ public class DKVsSortTest {
 	@Test
 	public void testSortByKeysWithEmptyStructure() {
 		DKVs.sortByKeys(order.ASCENDING);
+		assertTrue(DKVs.getKeys().isEmpty());
 	}
 	
 	@Test
 	public void testSortByValuesWithEmptyStructure(){
 		DKVs.sortByKeys(order.ASCENDING);
+		assertTrue(DKVs.getKeys().isEmpty());
 	}
 	
 	@Test

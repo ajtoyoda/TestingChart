@@ -17,16 +17,16 @@ public class DKVsRemoveTest {
 
 	@After
 	public void tearDown() throws Exception {
+		DKVs = null;
 	}
 
-	@Test (expected = UnknownKeyException.class)
+	@Test 
 	public void removeExistingByKey() {
 		Integer key = 0;
 		Double value = 1.11;
 		DKVs.addValue(key, value);
 		DKVs.removeValue(key);
-		DKVs.getValue(key);
-		
+		assertTrue(DKVs.getKeys().isEmpty());
 	}
 	
 	@Test 
@@ -36,9 +36,22 @@ public class DKVsRemoveTest {
 		Double value = 1.11;
 		DKVs.addValue(key, value);
 		DKVs.removeValue(falseKey);
-		DKVs.getValue(key);
+		assertTrue(DKVs.getValue(key)==value);
 		
 	}
+	
+	@Test (expected = UnknownKeyException.class)
+	public void removeNullByKey(){
+		Integer key = 0;
+		Integer falseKey = null;
+		Double value = 1.11;
+		DKVs.addValue(key, value);
+		DKVs.removeValue(falseKey);
+	}
+	
+	//note that remove by key translates keys to index and thus also test remove by index
+	
+	
 
 	DefaultKeyedValues DKVs;
 }
