@@ -61,9 +61,24 @@ package org.jfree.data;
 
 import java.io.Serializable;
 
+import com.reeltwo.jumble.annotations.TestClass;
+
 /**
  * Represents an immutable range of values.
  */
+@TestClass({"org.jfree.data.test.RangeCombineTest",
+	"org.jfree.data.test.RangeConstrainTest",
+	"org.jfree.data.test.RangeConstructorTest",
+	"org.jfree.data.test.RangeContainsTest",
+	"org.jfree.data.test.RangeExpandTest",
+	"org.jfree.data.test.RangeExpandToIncludeTest",
+	"org.jfree.data.test.RangeGetCentralValueTest",
+	"org.jfree.data.test.RangeGetLengthTest",
+	"org.jfree.data.test.RangeGetLowerBoundTest",
+	"org.jfree.data.test.RangeHashCodeTest",
+	"org.jfree.data.test.RangeIntersectsTest",
+	"org.jfree.data.test.RangeShiftTest",
+	"org.jfree.data.test.RangeToStringTest"})
 public strictfp class Range implements Serializable {
 
     /** For serialization. */

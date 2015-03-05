@@ -63,10 +63,17 @@ import org.jfree.util.ObjectUtilities;
 import org.jfree.util.PublicCloneable;
 import org.jfree.util.SortOrder;
 
+import com.reeltwo.jumble.annotations.TestClass;
+
 /**
  * An ordered list of (key, value) items.  This class provides a default 
  * implementation of the {@link KeyedValues} interface.
  */
+@TestClass({"org.jfree.data.test.DKVsEqualsTest",
+		"org.jfree.data.test.DKVsGetKeysTest",
+		"org.jfree.data.test.DKVsRemoveTest",
+		"org.jfree.data.test.DKVsSetValueTest",
+		"org.jfree.data.test.DKVsSortTest"})
 public class DefaultKeyedValues implements KeyedValues, 
                                            Cloneable, PublicCloneable, 
                                            Serializable {
