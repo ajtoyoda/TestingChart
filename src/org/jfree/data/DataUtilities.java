@@ -46,11 +46,17 @@
 package org.jfree.data;
 
 import org.jfree.data.general.DatasetUtilities;
+import com.reeltwo.jumble.annotations.TestClass;
 
 /**
  * Utility methods for use with some of the data classes (but not the datasets, 
  * see {@link DatasetUtilities}).
  */
+@TestClass({"org.jfree.data.test.DataUtilitiesCalculateColumnTotalTest",
+		"org.jfree.data.test.DataUtilitiesCalculateRowTotalTest",
+		"org.jfree.data.test.DataUtilitiesCreateNumberArrayTest",
+		"org.jfree.data.test.DataUtilitiesCreateNumberArray2DTest",
+		"org.jfree.data.test.DataUtilitiesGetCumulativePercentagesTest"})
 public abstract class DataUtilities {
 
     /**
@@ -62,7 +68,7 @@ public abstract class DataUtilities {
      * 
      * @return The sum of the values in the specified column.
      */
-    public static double calculateColumnTotal(Values2D data, int column) {
+	public static double calculateColumnTotal(Values2D data, int column) {
         double total = 0.0;
         int rowCount = data.getRowCount();
         for (int r = 0; r < rowCount; r++) {

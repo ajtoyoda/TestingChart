@@ -20,5 +20,6 @@
 	<classpathentry kind="lib" path="lib/jMock/jmock-junit4-2.5.1.jar"/>
 	<classpathentry kind="lib" path="lib/jMock/jmock-legacy-2.5.1.jar"/>
 	<classpathentry kind="lib" path="lib/jMock/jmock-script-2.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/jumble-annotations_binary_1.2.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
