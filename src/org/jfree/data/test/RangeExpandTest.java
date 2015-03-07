@@ -20,7 +20,7 @@ public class RangeExpandTest {
 		//Ensure it is reset for safety
 	}
 
-	@Test (expected = InvalidParameterException.class)
+	@Test (expected = IllegalArgumentException.class)
 	public void testExpandNullArgument(){
 		Range.expand(null, 0, 0);
 	}

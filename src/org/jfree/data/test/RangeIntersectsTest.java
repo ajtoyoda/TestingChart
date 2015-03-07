@@ -34,7 +34,7 @@ public class RangeIntersectsTest extends TestCase {
 	@Test public void testIntersectsRangeEqualToRange(){
 		assertEquals("0,10 should intersect 0,10",
 				true,exampleRange.intersects(0,10));
-	}	
+	}
 	@Test public void testIntersectsEntirelyLessThanRange(){
 		assertEquals("-10,-1 should not intersect 0,10",
 				false, exampleRange.intersects(-10,-1));
@@ -55,18 +55,19 @@ public class RangeIntersectsTest extends TestCase {
 	@Test public void testIntersectsRangeOfSizeZeroIntersectsIdenticalRange(){
 		assertEquals("0,0 should intersect 0,0",
 				true, exampleRange00.intersects(0,10));
-	}	
+	}
+	
 	@Test public void testIntersectsEntirelyLessThanRangeOfLength0(){
 		assertEquals("-5,-2 should not intersect 0,0",
-				false, exampleRange00.intersects(-5,2));
+				false, exampleRange00.intersects(-5,-2));
 	}
 	@Test public void testIntersectsUpperBoundOfIntersectingRangeEqualToLowerBoundOfRangeOfLength0(){
 		assertEquals("-1,0 should not intersect 0,0",
 				false, exampleRange00.intersects(-1, 0));
 	}
 	@Test public void testIntersectsLowerBoundOfIntersectingRangeEqualToUpperBoundOfRangeOfLength0(){
-		assertEquals("0,1 should not intersect 0,0",
-				false, exampleRange00.intersects(0,1));
+		assertEquals("0,1 should intersect 0,0",
+				true, exampleRange00.intersects(0,1));
 	}
 	@Test public void testIntersectsEntirelyGreaterThanRangeOfLength0(){
 		assertEquals("2,5 should not intersect 0,0",

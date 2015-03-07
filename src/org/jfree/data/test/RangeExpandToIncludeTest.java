@@ -17,7 +17,8 @@ public class RangeExpandToIncludeTest {
 	public void tearDown() {
 		//Ensure it is reset for safety
 	}
-
+	
+	@Test
 	public void testExpandToIncludeNullArgument(){
 		range = Range.expandToInclude(null, 0);
 		assertEquals(new Range(0,0), range);

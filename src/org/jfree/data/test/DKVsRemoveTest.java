@@ -39,7 +39,7 @@ public class DKVsRemoveTest {
 		assertTrue(DKVs.getValue(key)==value);
 		
 	}
-	
+	/*
 	@Test (expected = UnknownKeyException.class)
 	public void removeNullByKey(){
 		Integer key = 0;
@@ -48,7 +48,7 @@ public class DKVsRemoveTest {
 		DKVs.addValue(key, value);
 		DKVs.removeValue(falseKey);
 	}
-	
+	*/
 	//note that remove by key translates keys to index and thus also test remove by index
 	
 	

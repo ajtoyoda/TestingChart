@@ -49,7 +49,7 @@ public class RangeConstrainTest extends TestCase {
 
 	/***
 	 * Tests a constrain value of a number equal to a the range of length 0
-	 */
+	*/ 
 	@Test
 	public void testCoinstrainValueEqualToRangeWithRangeOfLength0() {
 		assertEquals("The constrained value of 0 on 0 and 0 should be 0", 0,
@@ -58,7 +58,7 @@ public class RangeConstrainTest extends TestCase {
 
 	/***
 	 * Test constrain value less than range
-	 */
+	*/
 	@Test
 	public void testCoinstrainValueLessThanRange() {
 		assertEquals("The constrained value of -2 on -1 and 1 should be -1",
@@ -67,7 +67,7 @@ public class RangeConstrainTest extends TestCase {
 
 	/***
 	 * Test constrain value equal to lower bound of range
-	 */
+	*/
 	@Test
 	public void testCoinstrainValueEqualToLowerBoundOfRange() {
 		assertEquals("The constrained value of -1 on -1 and 1 should be -1",
@@ -76,7 +76,7 @@ public class RangeConstrainTest extends TestCase {
 
 	/***
 	 * Test constrain value inside of the range 
-	 */
+	*/
 	@Test
 	public void testCoinstrainValueInsideOfRange() {
 		assertEquals("The constrained value of 0 on -1 and 1 should be 0", 0,
@@ -85,7 +85,7 @@ public class RangeConstrainTest extends TestCase {
 
 	/***
 	 * Test constrain value equal to upper bound of range
-	 */
+	*/
 	@Test
 	public void testCoinstrainValueEqualToUpperBoundOfRange() {
 		assertEquals("The constrained value of 1 on -1 and 1 should be 1", 1,
@@ -108,6 +108,5 @@ public class RangeConstrainTest extends TestCase {
 	public void testConstrainValueDecimal(){
 		assertEquals("The constrained value of 1.5 on -1 and 1 should be 1", 1, exampleRange.constrain(1.5), 0.000001d);
 	}
-
 	private Range exampleRange, exampleRange1;
 }

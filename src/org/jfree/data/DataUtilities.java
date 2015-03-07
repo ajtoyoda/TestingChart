@@ -90,7 +90,7 @@ public abstract class DataUtilities {
      * @return The total of the values in the specified row.
      */
     public static double calculateRowTotal(Values2D data, int row) {
-        double total = 0.0;
+    	double total = 0.0;
         int columnCount = data.getColumnCount();
         for (int c = 0; c < columnCount; c++) {
             Number n = data.getValue(row, c);

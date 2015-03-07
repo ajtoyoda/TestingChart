@@ -19,33 +19,38 @@ public class RangeCombineTest extends TestCase {
 		exampleRange2 = null;
 	}
 
+	@Test
 	public void testBothNull(){
 		assertTrue(Range.combine(null, null)==null);
 	}
+	@Test
 	public void testFirstNull(){
 		exampleRange = new Range(1,1);
 		assertEquals(Range.combine(null, exampleRange), exampleRange);
 	}
-	
+	@Test
 	public void testSecondNull(){
 		exampleRange = new Range(1,1);
 		assertEquals(Range.combine(exampleRange, null), exampleRange);
 	}
-	
+	@Test
 	public void testFirstRangeHigherThanSecond(){
 		exampleRange= new Range(1,2);
 		exampleRange2 = new Range(2,3);
 		assertEquals(Range.combine(exampleRange, exampleRange2),new Range(1,3));
 	}
+	@Test
 	public void testSecondRangeHigherThanFirst(){
 		exampleRange= new Range(1,2);
 		exampleRange2 = new Range(2,3);
 		assertEquals(Range.combine(exampleRange2, exampleRange),new Range(1,3));
 	}
+	@Test
 	public void testCombineSameRange(){
 		exampleRange = new Range(1,2);
 		assertEquals(Range.combine(exampleRange, exampleRange), exampleRange);
 	}
+	@Test
 	public void testGapInRange(){
 		exampleRange = new Range(1,2);
 		exampleRange2 = new Range(3,4);
