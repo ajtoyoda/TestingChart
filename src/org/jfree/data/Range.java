@@ -345,6 +345,7 @@ public strictfp class Range implements Serializable {
      *
      * @return <code>true</code> if the input object is an equivalent range.
      */
+    @Override
     public boolean equals(Object obj) {
         if (!(obj instanceof Range)) {
             return false;
@@ -354,7 +355,7 @@ public strictfp class Range implements Serializable {
             return false;
         }
         if (!(this.upper == range.upper)) {
-            return true;
+            return false;
         }
         return true;
     }
